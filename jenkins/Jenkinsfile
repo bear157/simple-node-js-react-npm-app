@@ -8,7 +8,7 @@ pipeline {
                 
                 bat 'npm install'
                 bat 'npm install gh-pages --save-dev'
-                bat 'npm run build'                
+                bat 'npm run build'         
 
                 echo 'building stage end...'
             }
@@ -17,6 +17,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying stage...'
+
+                bat 'npm run deploy'
 
                 echo 'Deploying stage end...'
             }
