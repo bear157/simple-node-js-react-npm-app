@@ -13,5 +13,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://bear157.github.io/simple-node-js-react-npm-app/",
+  "homepage": "https://bear157.github.io/simple-node-js-react-npm-app/"
 }
