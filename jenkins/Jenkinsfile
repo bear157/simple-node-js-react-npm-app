@@ -5,9 +5,15 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'building stage...'
+                
                 bat 'npm install'
                 bat 'npm run build'
-                bat 'serve -s build'
+
+                bat 'cd build'
+                bat 'git init'
+                bat 'git add remote https://github.com/bear157/simple-node-js-react-npm-app.git'
+                bat 'git checkout gh-pages'
+
                 echo 'building stage end...'
             }
         }
